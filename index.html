@@ -7,39 +7,61 @@
 </head>
 <body>
     <h1>Malla Ingeniería en Construcción</h1>
-    <div id="malla-container">
-        <div class="bloque" id="bloque1">
-            <h2>Bloque 1</h2>
-            <div class="curso" data-codigo="CI1230" data-requisitos="CI0200,CI0202">CI1230 - INGLÉS I</div>
-            <div class="curso" data-codigo="CI1106">CI1106 - COMUNICACIÓN ESCRITA</div>
-            <div class="curso" data-codigo="CS1502">CS1502 - INTRO TÉCNICA CIENCIA Y TECNOLOGÍA</div>
-            <div class="curso" data-codigo="MA0101">MA0101 - MATEMÁTICA GENERAL</div>
-            <div class="curso" data-codigo="SE1100">SE1100 - ACTIVIDAD CULTURAL I</div>
-            <div class="curso" data-codigo="SE1200">SE1200 - ACTIVIDAD DEPORTIVA I</div>
-            <div class="curso" data-codigo="QU1106" data-requisitos-correquisitos="QU1102">QU1106 - QUÍMICA BÁSICA I</div>
-            <div class="curso" data-codigo="QU1102" data-requisitos-correquisitos="QU1106">QU1102 - LABORATORIO DE QUÍMICA BÁSICA I</div>
+    <div class="grid-container">
+        <div class="header-row">
+            <div class="header-cell">Año 1</div>
+            <div class="header-cell">Año 2</div>
+            <div class="header-cell">Año 3</div>
+            <div class="header-cell">Año 4</div>
+            <div class="header-cell">Año 5</div>
         </div>
-        <div class="bloque" id="bloque2">
-            <h2>Bloque 2</h2>
-            <div class="curso" data-codigo="CI1231" data-requisitos="CI1230">CI1231 - INGLÉS II</div>
-            <div class="curso" data-codigo="CI1107">CI1107 - COMUNICACIÓN ORAL</div>
-            <div class="curso" data-codigo="FH1000">FH1000 - CENTROS DE FORMACIÓN HUMANÍSTICA</div>
-            <div class="curso" data-codigo="FI1101" data-requisitos-correquisitos="MA1102">FI1101 - FÍSICA GENERAL I</div>
-            <div class="curso" data-codigo="QU1107" data-requisitos="QU1102,QU1106" data-requisitos-correquisitos="QU1104">QU1107 - QUÍMICA BÁSICA II</div>
-            <div class="curso" data-codigo="MA1102" data-requisitos="MA0101">MA1102 - CÁLCULO DIFERENCIAL E INTEGRAL</div>
-            <div class="curso" data-codigo="SE1400">SE1400 - ACTIVIDAD CULTURAL-DEPORTIVA</div>
-            <div class="curso" data-codigo="FI1201" data-requisitos-correquisitos="FI1101">FI1201 - LAB FÍSICA I</div>
-            <div class="curso" data-codigo="QU1104" data-requisitos="QU1102,QU1106" data-requisitos-correquisitos="QU1107">QU1104 - LAB QUÍMICA II</div>
-        </div>
-        <div class="bloque" id="bloque3">
-            <h2>Bloque 3</h2>
-            <div class="curso" data-codigo="CO2201" data-requisitos="MA0101">CO2201 - DIBUJO</div>
-            <div class="curso" data-codigo="CO2205" data-requisitos="FI1101">CO2205 - ESTÁTICA</div>
-            <div class="curso" data-codigo="CO4108">CO4108 - TALLER I</div>
-            <div class="curso" data-codigo="CS2101" data-requisitos="CI1107">CS2101 - AMBIENTE HUMANO</div>
-            <div class="curso" data-codigo="FI1102" data-requisitos="FI1101,FI1201,MA1102" data-requisitos-correquisitos="FI1202">FI1102 - FÍSICA II</div>
-            <div class="curso" data-codigo="MA1103" data-requisitos="MA1102">MA1103 - CÁLCULO Y ÁLGEBRA LINEAL</div>
-            <div class="curso" data-codigo="FI1202" data-requisitos="FI1201" data-requisitos-correquisitos="FI1102">FI1202 - LAB FÍSICA II</div>
+        <div class="grid-row">
+            <div class="cell bloque" id="bloque1">
+                <h2>I</h2>
+                <div class="curso" data-codigo="CI1230" data-requisitos="CI0200,CI0202">CI1230 - INGLÉS I</div>
+                <div class="curso" data-codigo="CI1106">CI1106 - COMUNICACIÓN ESCRITA</div>
+                <div class="curso" data-codigo="CS1502">CS1502 - INTRO TÉCNICA CIENCIA Y TECNOLOGÍA</div>
+                <div class="curso" data-codigo="MA0101">MA0101 - MATEMÁTICA GENERAL</div>
+                <div class="curso" data-codigo="SE1100">SE1100 - ACTIVIDAD CULTURAL I</div>
+                <div class="curso" data-codigo="SE1200">SE1200 - ACTIVIDAD DEPORTIVA I</div>
+                <div class="curso" data-codigo="QU1106" data-requisitos-correquisitos="QU1102">QU1106 - QUÍMICA BÁSICA I</div>
+                <div class="curso" data-codigo="QU1102" data-requisitos-correquisitos="QU1106">QU1102 - LAB QUÍMICA I</div>
+            </div>
+            <div class="cell bloque" id="bloque3">
+                <h2>III</h2>
+                <div class="curso" data-codigo="CO2201" data-requisitos="MA0101">CO2201 - DIBUJO</div>
+                <div class="curso" data-codigo="CO2205" data-requisitos="FI1101">CO2205 - ESTÁTICA</div>
+                <div class="curso" data-codigo="CO4108">CO4108 - TALLER I</div>
+                <div class="curso" data-codigo="CS2101" data-requisitos="CI1107">CS2101 - AMBIENTE HUMANO</div>
+                <div class="curso" data-codigo="FI1102" data-requisitos="FI1101,FI1201,MA1102" data-requisitos-correquisitos="FI1202">FI1102 - FÍSICA II</div>
+                <div class="curso" data-codigo="MA1103" data-requisitos="MA1102">MA1103 - CÁLCULO Y ÁLGEBRA LINEAL</div>
+                <div class="curso" data-codigo="FI1202" data-requisitos="FI1201" data-requisitos-correquisitos="FI1102">FI1202 - LAB FÍSICA II</div>
+            </div>
+            <div class="cell bloque" id="bloque5">
+                <h2>V</h2>
+                <div class="curso">CO3301 - TOPOGRAFÍA APLICADA</div>
+                <div class="curso">CO3305 - MECÁNICA DE SUELOS I</div>
+                <div class="curso">CO3403 - CONCRETO</div>
+                <div class="curso">CO3404 - LAB CONCRETO</div>
+                <div class="curso">CO3405 - MECÁNICA DEL SÓLIDO II</div>
+                <div class="curso">MA2105 - ECUACIONES DIFERENCIALES</div>
+                <div class="curso">ME2208 - CIENCIAS DE LOS MATERIALES</div>
+            </div>
+            <div class="cell bloque" id="bloque7">
+                <h2>VII</h2>
+                <div class="curso">CO3103 - COSTOS DE CONSTRUCCIÓN I</div>
+                <div class="curso">CO3302 - GEOLOGÍA APLICADA</div>
+                <div class="curso">CO4307 - CARRETERAS I</div>
+                <div class="curso">CO3503 - LAB HIDRÁULICA</div>
+                <div class="curso">CO4409 - ESTRUCTURAS DE ACERO</div>
+                <div class="curso">CO4505 - INSTALACIONES ELECTROMECÁNICAS</div>
+            </div>
+            <div class="cell bloque" id="bloque9">
+                <h2>IX</h2>
+                <div class="curso">AE5121 - INGENIERÍA ECONÓMICA</div>
+                <div class="curso">CO5023 - ESTRUCTURAS TEMPORALES</div>
+                <div class="curso">CO5056 - TALLER DE DISEÑO</div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

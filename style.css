@@ -1,8 +1,8 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #fef6fb;
-    color: #333;
     padding: 20px;
+    color: #333;
 }
 
 h1 {
@@ -10,27 +10,47 @@ h1 {
     color: #a56abf;
 }
 
-.bloque {
-    background-color: #f3e6f5;
-    border: 2px solid #e2c4f9;
-    border-radius: 20px;
-    padding: 15px;
-    margin: 20px auto;
-    max-width: 800px;
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.bloque h2 {
-    color: #c96ca0;
+.header-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-cell {
+    flex: 1;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #ead4f3;
+    border-radius: 10px;
+}
+
+.grid-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cell {
+    flex: 1;
+    background-color: #f3e6f5;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
 }
 
 .curso {
     background-color: #fce4ec;
     border: 1px solid #f8bbd0;
     border-radius: 12px;
-    padding: 10px;
-    margin: 5px 0;
+    padding: 8px;
+    margin: 4px 0;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .curso.completado {
@@ -41,4 +61,9 @@ h1 {
 .curso.bloqueado {
     opacity: 0.4;
     pointer-events: none;
+}
+
+h2 {
+    color: #c96ca0;
+    text-align: center;
 }
