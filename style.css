@@ -1,0 +1,44 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef6fb;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #a56abf;
+}
+
+.bloque {
+    background-color: #f3e6f5;
+    border: 2px solid #e2c4f9;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.bloque h2 {
+    color: #c96ca0;
+}
+
+.curso {
+    background-color: #fce4ec;
+    border: 1px solid #f8bbd0;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.curso.completado {
+    background-color: #d1c4e9;
+    text-decoration: line-through;
+}
+
+.curso.bloqueado {
+    opacity: 0.4;
+    pointer-events: none;
+}
