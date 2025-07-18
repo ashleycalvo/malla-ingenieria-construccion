@@ -1,69 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malla Ingeniería en Construcción</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Malla Ingeniería en Construcción</h1>
-    <div class="grid-container">
-        <div class="header-row">
-            <div class="header-cell">Año 1</div>
-            <div class="header-cell">Año 2</div>
-            <div class="header-cell">Año 3</div>
-            <div class="header-cell">Año 4</div>
-            <div class="header-cell">Año 5</div>
-        </div>
-        <div class="grid-row">
-            <div class="cell bloque" id="bloque1">
-                <h2>I</h2>
-                <div class="curso" data-codigo="CI1230" data-requisitos="CI0200,CI0202">CI1230 - INGLÉS I</div>
-                <div class="curso" data-codigo="CI1106">CI1106 - COMUNICACIÓN ESCRITA</div>
-                <div class="curso" data-codigo="CS1502">CS1502 - INTRO TÉCNICA CIENCIA Y TECNOLOGÍA</div>
-                <div class="curso" data-codigo="MA0101">MA0101 - MATEMÁTICA GENERAL</div>
-                <div class="curso" data-codigo="SE1100">SE1100 - ACTIVIDAD CULTURAL I</div>
-                <div class="curso" data-codigo="SE1200">SE1200 - ACTIVIDAD DEPORTIVA I</div>
-                <div class="curso" data-codigo="QU1106" data-requisitos-correquisitos="QU1102">QU1106 - QUÍMICA BÁSICA I</div>
-                <div class="curso" data-codigo="QU1102" data-requisitos-correquisitos="QU1106">QU1102 - LAB QUÍMICA I</div>
-            </div>
-            <div class="cell bloque" id="bloque3">
-                <h2>III</h2>
-                <div class="curso" data-codigo="CO2201" data-requisitos="MA0101">CO2201 - DIBUJO</div>
-                <div class="curso" data-codigo="CO2205" data-requisitos="FI1101">CO2205 - ESTÁTICA</div>
-                <div class="curso" data-codigo="CO4108">CO4108 - TALLER I</div>
-                <div class="curso" data-codigo="CS2101" data-requisitos="CI1107">CS2101 - AMBIENTE HUMANO</div>
-                <div class="curso" data-codigo="FI1102" data-requisitos="FI1101,FI1201,MA1102" data-requisitos-correquisitos="FI1202">FI1102 - FÍSICA II</div>
-                <div class="curso" data-codigo="MA1103" data-requisitos="MA1102">MA1103 - CÁLCULO Y ÁLGEBRA LINEAL</div>
-                <div class="curso" data-codigo="FI1202" data-requisitos="FI1201" data-requisitos-correquisitos="FI1102">FI1202 - LAB FÍSICA II</div>
-            </div>
-            <div class="cell bloque" id="bloque5">
-                <h2>V</h2>
-                <div class="curso">CO3301 - TOPOGRAFÍA APLICADA</div>
-                <div class="curso">CO3305 - MECÁNICA DE SUELOS I</div>
-                <div class="curso">CO3403 - CONCRETO</div>
-                <div class="curso">CO3404 - LAB CONCRETO</div>
-                <div class="curso">CO3405 - MECÁNICA DEL SÓLIDO II</div>
-                <div class="curso">MA2105 - ECUACIONES DIFERENCIALES</div>
-                <div class="curso">ME2208 - CIENCIAS DE LOS MATERIALES</div>
-            </div>
-            <div class="cell bloque" id="bloque7">
-                <h2>VII</h2>
-                <div class="curso">CO3103 - COSTOS DE CONSTRUCCIÓN I</div>
-                <div class="curso">CO3302 - GEOLOGÍA APLICADA</div>
-                <div class="curso">CO4307 - CARRETERAS I</div>
-                <div class="curso">CO3503 - LAB HIDRÁULICA</div>
-                <div class="curso">CO4409 - ESTRUCTURAS DE ACERO</div>
-                <div class="curso">CO4505 - INSTALACIONES ELECTROMECÁNICAS</div>
-            </div>
-            <div class="cell bloque" id="bloque9">
-                <h2>IX</h2>
-                <div class="curso">AE5121 - INGENIERÍA ECONÓMICA</div>
-                <div class="curso">CO5023 - ESTRUCTURAS TEMPORALES</div>
-                <div class="curso">CO5056 - TALLER DE DISEÑO</div>
-            </div>
-        </div>
-    </div>
+    <h1>Malla de Ingeniería en Construcción</h1>
+    <div id="malla" class="grid-container"></div>
     <script src="script.js"></script>
 </body>
 </html>

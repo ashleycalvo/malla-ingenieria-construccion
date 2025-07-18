@@ -1,69 +1,47 @@
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fef6fb;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
     color: #333;
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #a56abf;
+    color: #8e44ad;
 }
 
 .grid-container {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.semestre {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.header-row {
-    display: flex;
-    justify-content: space-around;
-}
-
-.header-cell {
-    flex: 1;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-    background-color: #ead4f3;
-    border-radius: 10px;
-}
-
-.grid-row {
-    display: flex;
-    justify-content: space-around;
-}
-
-.cell {
-    flex: 1;
-    background-color: #f3e6f5;
-    padding: 10px;
-    border-radius: 15px;
-    margin: 5px;
-}
-
 .curso {
-    background-color: #fce4ec;
-    border: 1px solid #f8bbd0;
+    background-color: #f6e9f8;
+    border: 2px solid #d7bde2;
     border-radius: 12px;
-    padding: 8px;
-    margin: 4px 0;
+    padding: 10px;
+    text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
+    opacity: 0.4;
+}
+
+.curso.activo {
+    opacity: 1;
+    background-color: #f9d6e5;
 }
 
 .curso.completado {
-    background-color: #d1c4e9;
-    text-decoration: line-through;
-}
-
-.curso.bloqueado {
-    opacity: 0.4;
-    pointer-events: none;
-}
-
-h2 {
-    color: #c96ca0;
-    text-align: center;
+    background-color: #dcd6f7;
+    border-color: #b39ddb;
 }
